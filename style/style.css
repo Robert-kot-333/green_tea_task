@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: white;
+}
+
+main,
+footer,
+.header-content-wrapper {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    background: url("../assets/bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.headerline {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+    padding: 0.6rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.header-content-wrapper {
+    padding: 0 2rem;
+}
+
+nav li {
+    padding-bottom: 1.2rem;
+}
+
+nav li:last-child {
+    padding-bottom: 2rem;
+}
+
+.heading img {
+    padding: 2rem 0;
+}
+
+section {
+    padding: 1.2rem;
+}
+
+.benefits,
+.tea-types,
+.featured-card {
+    background-color: white;
+    margin: 2rem 1rem;
+}
+
+.tea-types,
+.featured-card {
+    color: black;
+}
+
+.benefits img {
+    width: 100%;
+}
+
+.benefits div {
+    background-color: rgba(150, 176, 15, 0.7);
+    padding: 0.5rem 1rem;
+}
+
+h2 {
+    font-family: "Amaranth", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+.tea-types h2 {
+    text-align: left;
+}
+
+.tea-types p {
+    text-transform: uppercase;
+}
+
+.tea-types-images img,
+.featured-cards img {
+    max-width: 100%;
+}
+
+section.featured-cards {
+    padding: 0 0 1.2rem 0;
+}
+
+.featured-cards h2 {
+    line-height: 2.5rem;
+    font-weight: lighter;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+section.featured-cards p {
+    color: rgb(82, 82, 82);
+}
+
+.featured-card {
+    padding-bottom: 1.2rem;
+    margin: 6rem 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+p,
+h3,
+nav a,
+.basket {
+    opacity: 0.7;
+}
+
+.featured-image {
+    padding: 1rem;
+}
+
+#card-featured-new {
+    background-color: #e26a6a;
+}
+
+#card-featured-best-seller {
+    background-color: #f4b350;
+}
+
+#card-featured-selection {
+    background-color: #4ecdc4;
+}
+
+.basket {
+    display: none;
+}
+
+footer {
+    background-color: rgba(150, 176, 15, 0.7);
+    padding: 0.5rem 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .header-basket-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .basket {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .benefits {
+        position: relative;
+    }
+
+    .benefits-description {
+        position: absolute;
+        top: 3.5rem;
+    }
+
+    .tea-types-images {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .featured-cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .featured-card {
+        flex: 1;
+    }
+}
